@@ -36,6 +36,18 @@ function Contact(firstName, lastName, phoneNumber) {
 	this.phoneNumber = phoneNumber;
 }
 
-Contact.prototype.fullName + function() {
+Contact.prototype.fullName = function() {
 	return this.firstName + " " + this.lastName;
+}
+
+Contact.prototype.update = function(firstName, lastName, phoneNumber) {
+	if (firstName !== undefined) {
+		this.firstName = firstName;
+	}
+	if (lastName != undefined) {
+		this.lastName = lastName;
+	}
+	if (phoneNumber != undefined) {
+		this.phoneNumber = phoneNumber;
+	}
 }
